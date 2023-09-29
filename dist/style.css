@@ -30,23 +30,14 @@ main{
     justify-content: center;
     align-items: center;
     width: 100vw;
+    height: 100vh;
     flex-direction: column;
     background-color: aliceblue;
 }
 
-main button {
-    font-size: 30px;
-    border-radius: 10px;
-    padding: 20px;
-    font-family: sans-serif;
+h3 {
+    text-align: center;
 }
-
-#buttonDiv{
-    background-color: grey;
-    
-}
-
-
 
 form {
     display: inline-grid;
@@ -88,8 +79,56 @@ input {
    border: none;
    transition: 0.25s;
    font-size: 20px;
+   text-align: center;
 }
 
 #submitButton:hover{
     background-color: #54a552;
+}
+#cardsSpace {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr
+    
+    
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    width: 25vw;
+    height: 30vh;
+    background-color: rgb(236, 133, 142);
+    font-size: 25px;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: 1px solid grey;
+}
+
+.cards:hover {
+    box-shadow:  10px 15px 50px black;
+
+}
+
+.removeButton {
+    width: 20vw ;
+    border-radius: 10px;
+    height: 15%;
+    width: 20vw;
+    font-size: 20px;
+}
+
+.readedButton{
+    width: 20vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 15%;
+    width: 20vw;
+    font-size: 20px;
+    background-color: #7CE578;
 }
